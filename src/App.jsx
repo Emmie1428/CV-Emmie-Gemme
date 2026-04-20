@@ -1,9 +1,15 @@
+import { BrowserRouter } from 'react-router'
+import Router from "./composants/Router"
+import Header from "./composants/Header"
 import './App.css'
 
 function App() {
 
   return (  
-    <div>CV EMMIE</div>
+    <BrowserRouter>
+      <Header />
+      <Router />
+    </BrowserRouter>
   )
 }
 
