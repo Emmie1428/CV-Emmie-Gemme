@@ -28,7 +28,16 @@ function Projets () {
                         <p>{projet.description || "Pas de descrition"}</p>
                         <a href={projet.html_url} target="_blank">
                             📂 Voir sur GitHub
-                        </a>
+                        </a> 
+                        
+                        <img 
+                            src={`/images/projets/${projet.name}.png`}
+                            alt={`Preview de ${projet.name}`}
+                            style={{ width: "100%", maxWidth: "640px" }}
+                            onError={(e) => {
+                                e.target.src = "/images/projets/default.png"
+                            }}
+                        />
                     </div>
                 ))}
             </div>
