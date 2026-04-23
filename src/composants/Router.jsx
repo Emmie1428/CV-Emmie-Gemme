@@ -1,7 +1,7 @@
 import {Routes, Route} from "react-router-dom"
-import Accueil from "../pages/Accueil"
-import Projets from "../pages/Projets"
-import Contact from "../pages/Contact"
+import Accueil from "../pages/Accueil/Accueil"
+import Projets from "../pages/Projets/Projets"
+import Contact from "../pages/Contact/Contact"
 import Erreur from "../pages/Erreur"
 function Router () {
     return (

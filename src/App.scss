@@ -1,0 +1,21 @@
+@use "./styles/mixins.scss" as *;
+
+:root {
+    background-color: $couleur-primaire;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    @include title
+}
+
+h2 {
+    @include subtitle;
+}
+
+p {
+    @include texte;
+}

@@ -1,0 +1,42 @@
+$couleur-primaire: #ececec;
+$couleur-secondaire: #1350B3;
+$couleur-tertiaire: #3d3d3d;
+
+$font-primaire: Verdana, Geneva, Tahoma, sans-serif;
+$font-secondaire: Arial, Helvetica, sans-serif;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin title {
+    font-size: 28px;
+    font-family: $font-secondaire;
+}
+
+@mixin subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: $couleur-tertiaire;
+    font-family: $font-primaire;
+}
+
+@mixin texte {
+    font-size: 14px;
+    font-family: $font-primaire;
+}
+
+@mixin hover {
+    color: black;
+    cursor: pointer;
+}
+
+@mixin mobile {
+  @media (min-width: 375px) and (max-width: 1024px) {
+    @content;
+  }
+}
+

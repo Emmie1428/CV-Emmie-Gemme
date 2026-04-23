@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import { getProjetsPortfolio } from "../API"
-
+import { getProjetsPortfolio } from "../../API"
+import "./Projets.scss"
 
 function Projets () {
     const [projets, setProjets] = useState([])
@@ -19,25 +19,24 @@ function Projets () {
         if (projets.length === 0) return <p>Aucun projet trouvé :(</p>
     
     return (
-        <section>
-            <h1>Mes projets</h1>
-            <div>
+        <section className="projets">
+            <h1 className="projets_titre">Mes projets</h1>
+            <div className="projets_cards">
                 {projets.map((projet) => (
-                    <div key={projet.id}>
-                        <h2>{projet.name}</h2>
-                        <p>{projet.description || "Pas de descrition"}</p>
-                        <a href={projet.html_url} target="_blank">
-                            📂 Voir sur GitHub
-                        </a> 
-                        
+                    <div  className="projets_card" key={projet.id}>
+                        <h2 className="projets_card_title">{projet.name}</h2>             
                         <img 
                             src={`/images/projets/${projet.name}.png`}
                             alt={`Preview de ${projet.name}`}
-                            style={{ width: "100%", maxWidth: "640px" }}
+                            className="projets_card_image"
                             onError={(e) => {
                                 e.target.src = "/images/projets/default.png"
                             }}
                         />
+                        <p>{projet.description || "Pas de descrition"}</p>
+                        <a href={projet.html_url} target="_blank">
+                            📂 Voir sur GitHub
+                        </a> 
                     </div>
                 ))}
             </div>
