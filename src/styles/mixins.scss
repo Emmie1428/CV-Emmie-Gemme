@@ -12,21 +12,46 @@ $font-secondaire: Arial, Helvetica, sans-serif;
     flex-direction: column;
 }
 
+@mixin main-container {
+    padding: 40px 60px 0;
+    margin: 0;
+}
+
+@mixin list {
+    list-style-type: circle;
+    margin-left: 5%;
+}
+
 @mixin title {
-    font-size: 28px;
+    font-size: 36px;
     font-family: $font-secondaire;
 }
 
 @mixin subtitle {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 500;
     color: $couleur-tertiaire;
     font-family: $font-primaire;
+    margin: 10px 0;
+}
+
+@mixin little-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: $font-primaire;
+    margin: 8px 0;
+}
+
+@mixin dates {
+    font-size: 14px;
+    font-family: $font-primaire;
+    margin: 8px 0;
 }
 
 @mixin texte {
     font-size: 14px;
     font-family: $font-primaire;
+    margin: 10px 0;
 }
 
 @mixin hover {

@@ -6,18 +6,17 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     background-color: $couleur-secondaire;
     text-decoration: none;
 
     &_link {
         text-decoration: none;
-        @include subtitle;
+        @include little-subtitle;
         color: white;
     }
 
     &_link:hover {
         @include hover;        
     }
-    
 }

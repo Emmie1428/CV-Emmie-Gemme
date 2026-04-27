@@ -1,0 +1,48 @@
+@use "../../styles/mixins.scss" as *;
+
+
+.profil {
+    display: flex;
+    padding-bottom: 20px;
+
+    &_photo {
+        border-radius: 30px;
+        border: 2px solid $couleur-tertiaire;
+        margin: 10px 25px 10px 0;
+    }
+
+    &_info {
+        align-content: center;
+
+        &_title {
+            margin-bottom: 0;
+        }
+
+        &_text {
+                margin: 10px 0;
+        }
+    }
+
+}
+
+.expe-pro {
+    border-top: .1rem solid;
+    border-bottom: .1rem solid;
+    padding: 10px 0 20px;
+
+    &_list {
+        @include list;
+    }
+}
+
+.formations {
+    padding: 10px 0 20px;
+
+    &_list {
+        @include list;
+
+        &_ecole {
+            margin: 0;
+        }
+    }
+}

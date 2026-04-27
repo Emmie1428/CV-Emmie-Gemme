@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+section {
+    @include main-container
+}
+
 h1 {
     @include title
 }
@@ -16,6 +20,14 @@ h2 {
     @include subtitle;
 }
 
+h3 {
+    @include little-subtitle
+}
+
 p {
     @include texte;
+}
+
+.dates {
+    @include dates
 }

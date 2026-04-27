@@ -1,0 +1,16 @@
+@use "../../styles/mixins.scss" as *;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    gap: 3rem;
+
+    &_logo{
+        width: 32px;
+        height: 32px;
+        @include hover;
+    }
+}
