@@ -26,15 +26,15 @@ function Projets () {
                     <div  className="projets_card" key={projet.id}>
                         <h2 className="projets_card_title">{projet.name}</h2>             
                         <img 
-                            src={`/images/projets/${projet.name}.png`}
-                            alt={`Preview de ${projet.name}`}
+                            src={`/images/projets/${projet.name}.webp`}
+                            alt={`Aperçu de ${projet.name}`}
                             className="projets_card_image"
                             onError={(e) => {
                                 e.target.src = "/images/projets/default.png"
                             }}
                         />
-                        <p>{projet.description || "Pas de descrition"}</p>
-                        <a href={projet.html_url} target="_blank">
+                        <p className="projets_card_description">{projet.description || "Pas de descrition"}</p>
+                        <a href={projet.html_url} target="_blank" className="projets_card_link">
                             📂 Voir sur GitHub
                         </a> 
                     </div>

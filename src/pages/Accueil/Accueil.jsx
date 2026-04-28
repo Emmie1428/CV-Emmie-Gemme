@@ -14,23 +14,27 @@ function Accueil () {
             </div>
             <div className="expe-pro">
                 <h2>Expériences professionnelles</h2>
-                {EXPE_PRO.map((expe, index) => (
-                    <li key={index} className="expe-pro_list">
-                        <h3>{`${expe.titre}`}</h3>
-                        <p className="dates">{`${expe.temps}`}</p>
-                        <p>{`${expe.description}`}</p>
-                    </li>
-                ))}
+                <ul>
+                    {EXPE_PRO.map((expe, index) => (
+                        <li key={index} className="expe-pro_list">
+                            <h3>{`${expe.titre}`}</h3>
+                            <p className="dates">{`${expe.temps}`}</p>
+                            <p>{`${expe.description}`}</p>
+                        </li>
+                    ))}
+                </ul>
             </div>
             <div className="formations">
                 <h2>Formations</h2>
-                {FORMATION.map((formation, index) => (
-                    <li key={index} className="formations_list">
-                        <h3>{`${formation.titre}`}</h3>
-                        <p className="formations_list_ecole">{`${formation.ecole}`}</p>
-                        <p className="dates" >{`${formation.temps}`}</p>
-                    </li>
-                ))}
+                <ul>
+                    {FORMATION.map((formation, index) => (
+                        <li key={index} className="formations_list">
+                            <h3>{`${formation.titre}`}</h3>
+                            <p className="formations_list_ecole">{`${formation.ecole}`}</p>
+                            <p className="dates" >{`${formation.temps}`}</p>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </section>
     )

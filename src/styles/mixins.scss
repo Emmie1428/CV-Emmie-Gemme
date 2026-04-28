@@ -19,7 +19,7 @@ $font-secondaire: Arial, Helvetica, sans-serif;
 
 @mixin list {
     list-style-type: circle;
-    margin-left: 5%;
+   
 }
 
 @mixin title {
@@ -45,11 +45,11 @@ $font-secondaire: Arial, Helvetica, sans-serif;
 @mixin dates {
     font-size: 14px;
     font-family: $font-primaire;
-    margin: 8px 0;
+    margin: 5px 0;
 }
 
 @mixin texte {
-    font-size: 14px;
+    font-size: 16px;
     font-family: $font-primaire;
     margin: 10px 0;
 }
